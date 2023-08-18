@@ -123,6 +123,7 @@ body {
     font-weight: 500;
     color: #FF385C;
     margin: 0 auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* sections */
@@ -138,7 +139,8 @@ body {
 
 /* categories */
 .cat {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
     margin-left: 64px;
     margin-right: 64px;
@@ -147,7 +149,7 @@ body {
 .card1,
 .card2,
 .card3 {
-    width: 416px;
+    width: 100%;
     height: 468px;
     border-radius: 10px;
 }
@@ -157,6 +159,8 @@ body {
     width: 100%;
     height: 360px;
     border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .beach {
@@ -164,6 +168,8 @@ body {
     width: 100%;
     height: 360px;
     border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .city {
@@ -171,6 +177,8 @@ body {
     width: 100%;
     height: 360px;
     border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title1 {
@@ -213,22 +221,25 @@ body {
 }
 /* experiences */
 .exp {
-    display: flex;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-left: 64px;
     margin-right: 64px;
+    gap: 24px;
 }
 
 .home-card {
     position: relative;
     background-image: url(./Assets/Images/home.jpg);
-    width: 595px;
+    width: 100%;
     height: 595px;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gradient1 {
-    width: 595px;
+    width: 100%;
     height: 430.654px;
     border-radius: 10px;
     background: linear-gradient(180deg, #262626 0%, rgba(196, 196, 196, 0.00) 100%);
@@ -265,13 +276,15 @@ body {
 .trip-card {
     position: relative;
     background-image: url(./Assets/Images/trip.jpg);
-    width: 595px;
+    width: 100%;
     height: 595px;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gradient2 {
-    width: 595px;
+    width: 100%;
     height: 430.654px;
     border-radius: 10px;
     background: linear-gradient(180deg, #262626 0%, rgba(196, 196, 196, 0.00) 100%);
@@ -303,4 +316,109 @@ body {
     color: white;
     font-size: 36px;
     font-weight: 500;
+}
+
+/* shop */
+
+.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 64px 64px 64px ;
+}
+
+.sec3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tb {
+    color: #FF5A5F;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #FF5A5F;
+    padding-bottom: 2px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.shops1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+    background-image: url(./Assets/Images/1.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shops2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+    background-image: url(./Assets/Images/2.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shops3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+    background-image: url(./Assets/Images/3.png);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shops4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+    background-image: url(./Assets/Images/4.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shops5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+    background-image: url(./Assets/Images/5.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shops6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 274px;
+    background-image: url(./Assets/Images/6.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
